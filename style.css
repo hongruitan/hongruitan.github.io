@@ -138,3 +138,25 @@ p {
   50% { transform: scale(1.5); opacity: 1; }
   100% { transform: scale(1); }
 }
+
+.fortune-animated {
+  animation: popFade 0.6s ease;
+  font-size: 1.4em;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+@keyframes popFade {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
