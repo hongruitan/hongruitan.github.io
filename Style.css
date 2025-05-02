@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000; /* Black background */
+  color: #e0e0e0; /* Light gray text */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1c1c1c; /* Dark container */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+  color: #e0e0e0;
+}
+
+h1 {
+  text-align: center;
+  color: #00ccff; /* Electric blue */
+  font-size: 2.5em;
+}
+
+img {
+  display: block;
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 4px solid #00ffff; /* Cyan border */
+}
+
+p {
+  line-height: 1.7;
+  font-size: 1.2em;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.95em;
+  color: #999999;
+}
+
+.highlight {
+  background-color: #00ffff; /* Cyan */
+  color: #000000;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.button-section button {
+  background-color: #00ffff; /* Cyan */
+  color: #000000;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-section button:hover {
+  background-color: #33ffff;
+  transform: scale(1.05);
+}
+
+.introduction {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+#game-area {
+  text-align: center;
+  padding: 30px;
+  background-color: #141414;
+  border-radius: 10px;
+  margin-top: 50px;
+  color: #e0e0e0;
+}
+
+#tic-tac-toe {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #00ffff;
+  font-size: 2em;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.status {
+  font-size: 1.2em;
+  margin-top: 15px;
+  color: #00ccff;
+}
+
+.confetti {
+  animation: pop 0.5s ease-in-out;
+  font-size: 3em;
+  color: #ffff33;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.5); opacity: 1; }
+  100% { transform: scale(1); }
+}
